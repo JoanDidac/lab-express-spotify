@@ -1,0 +1,295 @@
+/* General styles */
+
+
+/* Home Background image */
+.home-container {
+    background-image: url('/images/spotify-background.jpeg'); /* Change the path to your image */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+  }
+  
+  /* Center the content vertically and horizontally */
+  .home-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+    
+  }
+
+  .home-content h1 {
+    background-color: #12121200;
+    font-size: 70px;
+    text-shadow: 2px 2px 0px black , 5px 2px 0px  #1DB954 ;
+  }
+  
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #121212;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1, h2, h3 {
+    margin-bottom: 0.5rem;
+  }
+  
+  a {
+    color: #1DB954;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  /* Homepage styles */
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  input, button {
+    padding: 0.5rem;
+  }
+  
+  button {
+    background-color: #1DB954;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-top: 1rem;
+  }
+  
+  button:hover {
+    background-color: #1ED760;
+  }
+  
+  
+.search-results {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+    padding: 0;
+  }
+  
+  .search-results li {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    background-color: #2f2f2f4a;
+    border-radius: 13px;
+    box-shadow: 0px 10px 10px rgba(128, 128, 128, 0.375);
+  }
+  
+  .search-results img {
+    width: 100%;
+    max-width: 200px;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px gray;
+  }
+  
+  .search-results h3 {
+    font-size: 20px;
+    margin-bottom: 0.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: lighter;
+  }
+  
+  .search-results a {
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 0.25rem 0.75rem;
+    background-color: #1DB954;
+    color: #fff;
+    border-radius: 25px;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    box-shadow: 0px 0px 3px white;
+  }
+  
+  .search-results a:hover {
+    background-color: #1ED760;
+    text-decoration: none;
+  }
+
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  img {
+    max-width: 200px;
+    margin-right: 1rem;
+  }
+  
+  audio {
+    width: 100%;
+  }
+
+  
+  /* Album list styles */
+.albums-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.albums-list li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.albums-list img {
+    width: 30vw;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px gray;
+}
+
+.albums-list h3 {
+    font-size: 20px;
+    margin-bottom: 0.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: lighter;
+}
+
+.albums-list a {
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 0.25rem 0.75rem;
+    background-color: #1DB954;
+    color: #fff;
+    border-radius: 25px;
+    margin-top: 0.5rem;
+    box-shadow: 0px 0px 3px white;
+}
+
+.albums-list a:hover {
+    background-color: #1ED760;
+    text-decoration: none;
+}
+
+/* <--- Tracks.hbs styles ---> */
+
+.tracks-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .tracks-container h2 {
+    font-size: 30px;
+    margin-bottom: 1rem;
+  }
+  
+  .tracks-container ul {
+    width: 100%;
+  }
+  
+  .tracks-container li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: #2f2f2f4a;
+    border-radius: 13px;
+    box-shadow: 0px 10px 10px rgba(128, 128, 128, 0.375);
+    margin-bottom: 1rem;
+  }
+  
+  .tracks-container h3 {
+    font-size: 20px;
+    margin-bottom: 0.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: lighter;
+  }
+  
+  .tracks-container audio {
+    width: 70%;
+  }
+  
+  .tracks-container .artist-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 1rem;
+  }
+  .tracks-container img {
+    background-color: black;
+    width:fit-content;
+    box-shadow: 2px 6px 3px rgb(1, 91, 16);
+    border: 1px solid black ;
+  }
+  
+  .tracks-title {
+    
+    font-size: 36px;
+    font-weight: bold;
+    background-image: linear-gradient(-45deg, #1DB954, #1ED760, #15b34e, #1DB954);
+    -webkit-background-clip: text;
+    margin-bottom: 1rem;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    animation: gradient 6s ease infinite;
+    text-shadow: 2px 2px 0px black, 5px 2px 0px #1DB954;
+    
+  }
+  
+  .tracks-title:before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background-image: linear-gradient(-45deg, #1DB954, #1ED760, #15b34e, #1DB954);
+    z-index: -1;
+    filter: blur(4px);
+    opacity: 0.8;
+    animation: gradient 6s ease infinite;
+  }
+  
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  
